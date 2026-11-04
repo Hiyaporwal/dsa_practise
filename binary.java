@@ -4,7 +4,7 @@ public class binary {
         int start = 0 ; 
         int end = n-1 ;
         while(start<=end){
-            int mid = (start+end)/2 ;
+            int mid = start +(end-start)/2 ; // no overflow issue
             if(arr[mid]==target){
                 return mid ;
             }
@@ -19,7 +19,7 @@ public class binary {
     }
     public static void main(String args[]){
         int arr[] = {1,2,3,4,5,6,7,8} ;
-        int target = 5 ;
+        int target = 10;
         System.out.println(array(arr,target));
     }
     
