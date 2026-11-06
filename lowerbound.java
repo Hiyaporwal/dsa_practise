@@ -19,7 +19,7 @@ public class lowerbound {
     }
     public static void main(String args[]){
         int arr[] = {10,20,30,30,30,30,30,40,50};
-        int target = 30 ;
+        int target = 35 ;
         int ans = lowerbound(arr,target);
         System.out.print(ans);
     }
