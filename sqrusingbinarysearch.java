@@ -3,14 +3,17 @@ public class sqrusingbinarysearch {
         int start = 0 ; 
         int end = x ;
         int ans = -1 ;
+        if(x==0){
+            return 0 ; 
+        }
         while(start<=end){
             int mid = start + (end-start)/2 ;
-            if(mid*mid==x)
+            if(mid==x/mid)
                 {
                 return mid ;
         
             }
-            else if(mid*mid > x){
+            else if(mid > x/mid){
                 end = mid-1;
     
 
